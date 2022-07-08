@@ -1,4 +1,20 @@
 {
+    "name": "JSONify",
+    "description": "",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ailanyEXE/JSONify.git"
+    },
+    "author": "Ailany",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ailanyEXE/JSONify/issues"
+    },
+    "homepage": "https://github.com/ailanyEXE/JSONify#readme",
+    "engines": {
+        "node": "14.18.0"
+    },
     "scripts": {
         "builds": "cd frontend && react-scripts build",
         "install-client": "cd frontend && npm install && cd ..",
