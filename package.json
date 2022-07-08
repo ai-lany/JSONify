@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "build": "cd frontend && npm run build",
+        "install-client": "cd frontend && npm install",
+        "heroku-postbuild": "npm run install-client && npm run build",
+        "server": "cd backend && python server.py",
+        "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+        "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "nodemon": "^2.0.19"
+    }
+}
