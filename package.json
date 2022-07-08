@@ -17,7 +17,7 @@
     },
     "scripts": {
         "builds": "cd frontend && react-scripts build",
-        "install-client": "cd frontend && npm install && cd ..",
+        "install-client": "cd frontend && npm install",
         "heroku-postbuild": "npm run install-client && npm run builds",
         "server": "cd backend && npm i &&  node server.js",
         "develop": "concurrently --kill-others-on-fail \"npm run server\"",
