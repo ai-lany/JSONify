@@ -22,7 +22,7 @@
         "heroku-postbuild": "npm run install-client && npm run builds",
         "server": "cd backend && npm i &&  node server.js",
         "develop": "concurrently --kill-others-on-fail \"npm run server\"",
-        "start": "node server.js"
+        "start": "cd backend && node server.js"
     },
     "dependencies": {
         "axios": "^0.27.2",
