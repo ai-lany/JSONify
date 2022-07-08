@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "builds": "cd frontend && react-scripts build",
+        "builds": "cd frontend && npm run build",
         "install-client": "cd frontend && npm install",
         "heroku-postbuild": "npm run install-client && npm run builds",
         "server": "cd backend && npm i &&  node server.js",
