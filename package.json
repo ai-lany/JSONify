@@ -1,7 +1,7 @@
 {
     "scripts": {
         "builds": "cd frontend && npm run build",
-        "install-client": "cd frontend && npm install",
+        "install-client": "cd frontend && npm install & cd ..",
         "heroku-postbuild": "npm run install-client && npm run builds",
         "server": "cd backend && npm i &&  node server.js",
         "develop": "concurrently --kill-others-on-fail \"npm run server\"",
